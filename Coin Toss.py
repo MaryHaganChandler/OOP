@@ -1,5 +1,6 @@
 import CoinClass as c
-
+    #Importing the .py file that is the object definition file
+    #You are NOT importing the name of the class!
 
 # The main function.
 def main():
@@ -8,7 +9,7 @@ def main():
 
        # Display the side of the coin that is facing up.
        print('This side is up:', my_coin.get_sideup())    # notice you do not have to supply the argument/parameter
-
+                                #my_coin instead of Coin since you created
        # Toss the coin.
        print('I am going to toss the coin ten times:')
        for count in range(10):

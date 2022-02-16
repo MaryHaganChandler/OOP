@@ -1,3 +1,5 @@
+#This is our class definition file
+
 import random
 
 # The Coin class simulates a coin that can
