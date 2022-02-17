@@ -8,6 +8,9 @@ def main():
    start_bal = float(input('Enter your starting balance: '))
 
    # Create a BankAccount object.
+          #This is an instance. To create an instance, you have to
+          #give it a value to start out with. In this case, we
+          #use what the user gave us.
    savings = bc.BankAccount(start_bal)
 
    # Deposit the user's paycheck.

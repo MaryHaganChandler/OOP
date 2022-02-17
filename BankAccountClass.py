@@ -7,12 +7,14 @@ class BankAccount:
 # the account's balance. It is assigned to
 # the __balance attribute.
 
-    def __init__(self, bal):
-        self.__balance = bal
+    def __init__(self, bal):    #balance is the only attribute of the class BankAccount
+        self.__balance = bal    #The attribute is coming from the user
 
       # The deposit method makes a deposit into the
-      # account.
+      # account.  -his comment
 
+  #The deposit method allows us to receive an amount, and, based on that amount, change
+  #the balance of our Savings account.  -my comment
     def deposit(self, amount):
         self.__balance += amount
 
@@ -20,6 +22,9 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
+      if amount <= 0:
+        print("You can't do that!")
+      else:
         if self.__balance >= amount:
             self.__balance -= amount
         else:
@@ -28,7 +33,7 @@ class BankAccount:
       # The get_balance method returns the
       # account balance.
 
-    def get_balance(self):
+    def get_balance(self):    #This is an accessor 
         return self.__balance
 
 
